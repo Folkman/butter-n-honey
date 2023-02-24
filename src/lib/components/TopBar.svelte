@@ -37,7 +37,3 @@
     </Nav>
   </Collapse>
 </Navbar>
-
-<style>
-
-</style>

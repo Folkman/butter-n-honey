@@ -1,26 +1,15 @@
 <script lang="ts">
-  import TopBar from '$lib/assets/components/TopBar.svelte'
-  import { height, src as Main} from '$lib/assets/main.jpg?width=400&metadata'
+  import TopBar from '$lib/components/TopBar.svelte'
+  import Banner from '$lib/components/Banner.svelte'
   import Mapping from '$lib/assets/mapping.jpg'
   import About from '$lib/assets/about.jpg'
   import { Styles, Button, Container, Row, Col, Input, Image } from 'sveltestrap'
-
-  let isOpen = false
 </script>
 
 <Styles />
-<TopBar />
 
-<Container class="px-0">
-  <div class="text-center" style="height: {height}px; background-image: url({Main}); background-size: cover;">
-    <Row>
-      <Col>
-        <h1>Ready to Scripture map?</h1>
-        <Button>Get a Mapping Plan!</Button>
-      </Col>
-    </Row>
-  </div>
-</Container>
+<TopBar />
+<Banner />
 
 <Container>
   <Row>
