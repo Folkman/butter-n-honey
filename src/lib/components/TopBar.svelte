@@ -15,7 +15,7 @@
   const toggle = () => isOpen = !isOpen
 </script>
 
-<Navbar>
+<Navbar sticky="top" color="white">
   <NavbarBrand>
     <Image class="me-auto" alt="Butter n' Honey logo" src={Logo} />
   </NavbarBrand>
