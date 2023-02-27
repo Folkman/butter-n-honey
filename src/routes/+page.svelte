@@ -1,12 +1,11 @@
 <script lang="ts">
+  import '../global.scss'
   import TopBar from '$lib/components/TopBar.svelte'
   import Banner from '$lib/components/Banner.svelte'
   import Mapping from '$lib/assets/mapping.jpg'
   import About from '$lib/assets/about.jpg'
-  import { Styles, Button, Container, Row, Col, Input, Image } from 'sveltestrap'
+  import { Button, Container, Row, Col, Input, Image } from 'sveltestrap'
 </script>
-
-<Styles />
 
 <TopBar />
 <Banner />

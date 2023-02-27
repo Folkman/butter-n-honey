@@ -8,7 +8,7 @@
     Nav,
     NavItem,
     NavLink,
-    Image
+    Image,
   } from 'sveltestrap'
 
   let isOpen = false
