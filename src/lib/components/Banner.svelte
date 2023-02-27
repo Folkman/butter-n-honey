@@ -15,35 +15,37 @@ const setMainHeight = (event: Event): void => {
 }
 </script>
 
-<Container fluid class="px-0">
-  <Row>
-    <Col>
-      <div class="home" style:--home-height="{height}px">
-        <picture>
-          {#each Img as image}
-            <source srcset={image.src} media="(min-width: {image.width}px)" />
-          {/each}
-          {#each ImgMobile as image}
-            <source srcset={image.src} media="(min-width: {image.width}px)" />
-          {/each}
-          <img
-            on:load={setMainHeight}
-            alt="Scripture mapping journals arranged in a plus"
-            src={Img[0].src}
-          />
-        </picture>
+<div class="banner">
+  <Container fluid class="px-0">
+    <Row>
+      <Col>
+        <div class="home" style:--home-height="{height}px">
+          <picture>
+            {#each Img as image}
+              <source srcset={image.src} media="(min-width: {image.width}px)" />
+            {/each}
+            {#each ImgMobile as image}
+              <source srcset={image.src} media="(min-width: {image.width}px)" />
+            {/each}
+            <img
+              on:load={setMainHeight}
+              alt="Scripture mapping journals arranged in a plus"
+              src={Img[0].src}
+            />
+          </picture>
 
-        <div class="call-out">
-          <h1>
-            Ready to <br />
-            Scripture map?
-          </h1>
-          <Button class="button">Get a Mapping Plan!</Button>
+          <div class="call-out text-center">
+            <h1>
+              Ready to <br />
+              Scripture map?
+            </h1>
+            <Button class="button">Get a Mapping Plan!</Button>
+          </div>
         </div>
-      </div>
-    </Col>
-  </Row>
-</Container>
+      </Col>
+    </Row>
+  </Container>
+</div>
 
 <style lang="scss">
 .home {
@@ -67,7 +69,6 @@ img {
   justify-content: center;
   height: 100%;
   color: white !important;
-  text-align: center;
 
   h1 {
     padding: 15px;
