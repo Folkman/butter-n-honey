@@ -12,9 +12,7 @@
 <TopBar />
 <Banner />
 
-<Container>
-  <PlanForm />
-  <Mapping />
-  <About />
-  <Footer />
-</Container>
+<PlanForm />
+<Mapping />
+<About />
+<Footer />

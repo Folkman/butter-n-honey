@@ -5,3 +5,12 @@ $theme-colors:(
 );
 
 @import "bootstrap/scss/bootstrap.scss";
+
+
+html {
+  scroll-padding-top: 75px;
+}
+
+// [id] {
+//   scroll-margin-top: 75px;
+// }

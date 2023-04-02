@@ -1,23 +1,28 @@
 <script lang="ts">
-import Mapping from '$lib/assets/mapping.jpg'
 import { Row, Col, Image, Container, Card, CardBody } from 'sveltestrap'
+import MappingImg from '$lib/assets/mapping.jpg?w=1000;700&metadata'
+import ResponsiveImg from '$lib/components/ResponsiveImg.svelte'
 </script>
 
-<div class="mapping text-center">
-  <Row>
-    <Col class="px-0">
-      <Image fluid alt="Open scripture mapping journal with a mapped scripture" src={Mapping} />
-    </Col>
-    <Col class="p-5">
-      <h1>What is Scripture Mapping?</h1>
-      <p>
-        It's a visual Bible study method to dig deeper into God's word. Map a verse, a word, a Bible
-        character, a topic, an object, and many more!
-      </p>
-    </Col>
-  </Row>
+<div id="mapping" class="mapping text-center">
+  <Container fluid class="px-0">
+    <Row>
+      <Col xs="12">
+        <ResponsiveImg
+          alt="Open scripture mapping journal with a mapped scripture"
+          images={MappingImg}
+        />
+      </Col>
+      <Col xs=12 class="p-5">
+        <h1>What is Scripture Mapping?</h1>
+        <p>
+          It's a visual Bible study method to dig deeper into God's word. Map a verse, a word, a Bible
+          character, a topic, an object, and many more!
+        </p>
+      </Col>
+    </Row>
+  </Container>
 </div>
-
 
 <style lang="scss">
 @import '../../global.scss';
