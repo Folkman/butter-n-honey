@@ -7,18 +7,20 @@ import ResponsiveImg from '$lib/components/ResponsiveImg.svelte'
 <div id="mapping" class="mapping text-center">
   <Container fluid class="px-0">
     <Row>
-      <Col xs="12">
+      <Col xs="12" sm="6">
         <ResponsiveImg
           alt="Open scripture mapping journal with a mapped scripture"
           images={MappingImg}
         />
       </Col>
-      <Col xs=12 class="p-5">
-        <h1>What is Scripture Mapping?</h1>
-        <p>
-          It's a visual Bible study method to dig deeper into God's word. Map a verse, a word, a Bible
-          character, a topic, an object, and many more!
-        </p>
+      <Col xs=12 sm="6">
+        <div class="mapping-text p-5">
+          <h1>What is Scripture Mapping?</h1>
+          <p>
+            It's a visual Bible study method to dig deeper into God's word. Map a verse, a word, a
+            Bible character, a topic, an object, and many more!
+          </p>
+        </div>
       </Col>
     </Row>
   </Container>
@@ -28,11 +30,18 @@ import ResponsiveImg from '$lib/components/ResponsiveImg.svelte'
 @import '../../global.scss';
 
 .mapping {
-  h1 {
-    text-transform: uppercase;
-  }
-
   color: white;
   background-color: map-get($theme-colors, "secondary");
+
+  .mapping-text {
+    h1 {
+      text-transform: uppercase;
+      margin-bottom: 25px;
+    }
+
+    p {
+      font-size: 20px;
+    }
+  }
 }
 </style>

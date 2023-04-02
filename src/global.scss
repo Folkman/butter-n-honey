@@ -4,13 +4,10 @@ $theme-colors:(
   "light": #feffd5,
 );
 
-@import "bootstrap/scss/bootstrap.scss";
+$font-size-base: 18;
 
+@import "bootstrap/scss/bootstrap.scss";
 
 html {
   scroll-padding-top: 75px;
 }
-
-// [id] {
-//   scroll-margin-top: 75px;
-// }
