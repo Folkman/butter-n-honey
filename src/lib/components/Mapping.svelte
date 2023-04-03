@@ -1,24 +1,26 @@
 <script lang="ts">
-import { Row, Col, Image, Container, Card, CardBody } from 'sveltestrap'
-import MappingImg from '$lib/assets/mapping.jpg?w=1000;700&metadata'
+import { Row, Col, Container } from 'sveltestrap'
+import MappingImg from '$lib/assets/mapping.jpg?w=700;500;375;&metadata'
 import ResponsiveImg from '$lib/components/ResponsiveImg.svelte'
 </script>
 
 <div id="mapping" class="mapping text-center">
-  <Container fluid class="px-0">
+  <Container class="px-0">
     <Row>
-      <Col xs="12" sm="6">
+      <Col xs="12" md="6">
         <ResponsiveImg
           alt="Open scripture mapping journal with a mapped scripture"
           images={MappingImg}
         />
       </Col>
-      <Col xs=12 sm="6">
+      <Col xs=12 md="6">
         <div class="mapping-text p-5">
           <h1>What is Scripture Mapping?</h1>
           <p>
-            It's a visual Bible study method to dig deeper into God's word. Map a verse, a word, a
-            Bible character, a topic, an object, and many more!
+            Scripture mapping is a Bible study method where you visually analyze a Bible verse, a
+            word, or a Bible character to gain a deeper understanding and to see connections you may
+            have never seen before. It's a great tool to enhance your Bible study and spiritual
+            growth!
           </p>
         </div>
       </Col>

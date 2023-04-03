@@ -7,7 +7,7 @@ import { jumpTo } from '$lib/helper'
 </script>
 
 <div class="banner">
-  <Container fluid class="px-0">
+  <Container class="px-0">
     <Row>
       <Col>
         <ResponsiveImg

@@ -4,7 +4,7 @@ import { Container, Button, Row, Col, Card, CardBody, Form, FormGroup, Input } f
 
 <div id="plan-form" class="plan-form">
   <Container>
-    <Row class="p-4 text-center">
+    <Row class="p-2 text-center">
       <Col>
         <Card color="primary">
           <CardBody class="py-4">
@@ -32,5 +32,8 @@ import { Container, Button, Row, Col, Card, CardBody, Form, FormGroup, Input } f
   :global(.button) {
     text-transform: uppercase;
   }
+
+  max-width: 800px;
+  margin: 0 auto;
 }
 </style>

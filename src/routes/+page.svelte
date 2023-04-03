@@ -10,9 +10,21 @@
 </script>
 
 <TopBar />
-<Banner />
+<Container class="px-0">
+  <Banner />
+  <div class="spacer" />
+  <PlanForm />
+  <div class="spacer" />
+  <Mapping />
+  <div class="spacer" />
+  <About />
+  <div class="spacer" />
+  <Footer />
+  <div class="spacer" />
+</Container>
 
-<PlanForm />
-<Mapping />
-<About />
-<Footer />
+<style lang="scss">
+.spacer {
+  height: 60px;
+}
+</style>

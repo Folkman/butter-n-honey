@@ -12,6 +12,8 @@
   } from 'sveltestrap'
   import { jumpTo } from '$lib/helper'
 
+  const bnhUrl = 'https://shopbutternhoney.etsy.com'
+
   let isOpen = false
   let href: string | null = null
 
@@ -46,6 +48,9 @@
       </NavItem>
       <NavItem>
         <NavLink on:click={() => goTo('#about') }>About</NavLink>
+      </NavItem>
+      <NavItem>
+        <NavLink on:click={toggle} href={bnhUrl}>SHOP BUTTER N' HONEY</NavLink>
       </NavItem>
     </Nav>
   </Collapse>
