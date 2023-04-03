@@ -34,7 +34,7 @@
   <NavbarBrand>
     <Image class="me-auto" alt="Butter n' Honey logo" src={Logo} />
   </NavbarBrand>
-  <NavbarToggler class="me-2" on:click={toggle} />
+  <NavbarToggler class="me-2" on:click={toggle} color="link" />
   <Collapse {isOpen} navbar on:close={scroll}>
     <Nav navbar>
       <NavItem>
