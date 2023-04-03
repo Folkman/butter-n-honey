@@ -3,7 +3,6 @@ export let images: any[] = []
 export let mobileImages: any[] = []
 export let alt: string
 
-const defaultImg = images || mobileImages
 const aspect = images[0].height / images[0].width
 const aspectMobile = (mobileImages.length ? mobileImages[0].height / mobileImages[0].width : aspect)
 
@@ -24,7 +23,7 @@ const setHeight = (event: Event): void => {
     {#each mobileImages as image}
       <source srcset={image.src} media="(min-width: {image.width}px)" />
     {/each}
-    <img on:load={setHeight} {alt} src={defaultImg[0].src} />
+    <img on:load={setHeight} {alt} src={images[0].src} />
   </picture>
 
   <slot />

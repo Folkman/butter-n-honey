@@ -7,25 +7,23 @@ import { jumpTo } from '$lib/helper'
 </script>
 
 <div class="banner">
-  <Container class="px-0">
-    <Row>
-      <Col>
-        <ResponsiveImg
-          alt="Scripture mapping journals arranged in a plus"
-          images={Img}
-          mobileImages={ImgMobile}
-        >
-          <div class="call-out text-center">
-            <h1>
-              Ready to <br />
-              Scripture map?
-            </h1>
-            <Button class="button" on:click={() => jumpTo('#plan-form')}>Get a Mapping Plan!</Button>
-          </div>
-        </ResponsiveImg>
-      </Col>
-    </Row>
-  </Container>
+  <Row>
+    <Col>
+      <ResponsiveImg
+        alt="Scripture mapping journals arranged in a plus"
+        images={Img}
+        mobileImages={ImgMobile}
+      >
+        <div class="call-out text-center">
+          <h1>
+            Ready to <br />
+            Scripture map?
+          </h1>
+          <Button class="button" on:click={() => jumpTo('#plan-form')}>Get a Mapping Plan!</Button>
+        </div>
+      </ResponsiveImg>
+    </Col>
+  </Row>
 </div>
 
 <style lang="scss">

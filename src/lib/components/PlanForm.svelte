@@ -3,28 +3,26 @@ import { Container, Button, Row, Col, Card, CardBody, Form, FormGroup, Input } f
 </script>
 
 <div id="plan-form" class="plan-form">
-  <Container>
-    <Row class="p-2 text-center">
-      <Col>
-        <Card color="primary">
-          <CardBody class="py-4">
-            <Form>
-              <FormGroup floating label="First name">
-                <Input placeholder="First name" />
-              </FormGroup>
-              <FormGroup floating label="Last name">
-                <Input placeholder="Last name" />
-              </FormGroup>
-              <FormGroup floating label="Email">
-                <Input placeholder="Email" />
-              </FormGroup>
-              <Button class="button" color="light">Send Me the Plan!</Button>
-            </Form>
-          </CardBody>
-        </Card>
-      </Col>
-    </Row>
-  </Container>
+  <Row class="p-2 text-center">
+    <Col>
+      <Card color="primary">
+        <CardBody class="py-4">
+          <Form>
+            <FormGroup floating label="First name">
+              <Input placeholder="First name" />
+            </FormGroup>
+            <FormGroup floating label="Last name">
+              <Input placeholder="Last name" />
+            </FormGroup>
+            <FormGroup floating label="Email">
+              <Input placeholder="Email" />
+            </FormGroup>
+            <Button class="button" color="light">Send Me the Plan!</Button>
+          </Form>
+        </CardBody>
+      </Card>
+    </Col>
+  </Row>
 </div>
 
 <style lang="scss">

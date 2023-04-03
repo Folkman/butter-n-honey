@@ -10,7 +10,7 @@
 </script>
 
 <TopBar />
-<Container class="px-0">
+<Container>
   <Banner />
   <div class="spacer" />
   <PlanForm />
