@@ -13,8 +13,7 @@ import { showNotification } from '$lib/store'
 <TopBar />
 <Container>
   <Alert color="success" isOpen={$showNotification} dismissible>
-    Yay! You will receive an email with download details. Check your spam folder if you don't find
-    it in your inbox.
+    Yay! Your mapping plan is on its way to your inbox. Check your spam folder just in case!
   </Alert>
   <Banner />
   <div class="spacer" />
