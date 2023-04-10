@@ -1,5 +1,5 @@
 <script lang="ts">
-import { Row, Col, Container } from 'sveltestrap'
+import { Row, Col } from 'sveltestrap'
 import MappingImg from '$lib/assets/mapping.jpg?w=700;500;375;&metadata'
 import ResponsiveImg from '$lib/components/ResponsiveImg.svelte'
 </script>

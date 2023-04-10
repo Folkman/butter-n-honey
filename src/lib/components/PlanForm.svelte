@@ -1,5 +1,11 @@
 <script lang="ts">
-import { Container, Button, Row, Col, Card, CardBody, Form, FormGroup, Input } from 'sveltestrap'
+import { Button, Row, Col, Card, CardBody, Form, FormGroup, Input } from 'sveltestrap'
+
+const action = "https://gmail.us21.list-manage.com/subscribe/post?u=30955d0e25c1de81241a7ced8&amp;id=fd1fdfb434&amp;f_id=00fea9e1f0"
+
+let fname = ''
+let lname = ''
+let email = ''
 </script>
 
 <div id="plan-form" class="plan-form">
@@ -7,17 +13,23 @@ import { Container, Button, Row, Col, Card, CardBody, Form, FormGroup, Input } f
     <Col>
       <Card color="primary">
         <CardBody class="py-4">
-          <Form>
+          <Form {action} method="POST">
             <FormGroup floating label="First name">
-              <Input placeholder="First name" />
+              <Input name="FNAME" bind:value={fname} placeholder="First name" required />
             </FormGroup>
             <FormGroup floating label="Last name">
-              <Input placeholder="Last name" />
+              <Input name="LNAME" bind:value={lname} placeholder="Last name" />
             </FormGroup>
             <FormGroup floating label="Email">
-              <Input placeholder="Email" />
+              <Input name="EMAIL" bind:value={email} type="email" placeholder="Email" required />
             </FormGroup>
-            <Button class="button" color="light">Send Me the Plan!</Button>
+
+            <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+            <div style="position: absolute; left: -5000px;" aria-hidden="true">
+              <input type="text" tabindex="-1" />
+            </div>
+
+            <Button class="button" type="submit" color="light">Send Me the Plan!</Button>
           </Form>
         </CardBody>
       </Card>

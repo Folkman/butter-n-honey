@@ -2,7 +2,7 @@
 import Img from '$lib/assets/main.jpg?w=2500;2000;1500;1000;700&metadata'
 import ImgMobile from '$lib/assets/main-mobile.jpg?w=500;400;300&metadata'
 import ResponsiveImg from '$lib/components/ResponsiveImg.svelte'
-import { Button, Container, Row, Col } from 'sveltestrap'
+import { Button, Row, Col } from 'sveltestrap'
 import { jumpTo } from '$lib/helper'
 </script>
 
