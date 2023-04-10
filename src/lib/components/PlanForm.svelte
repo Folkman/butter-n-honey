@@ -30,6 +30,15 @@ let email = ''
             </div>
 
             <Button class="button" type="submit" color="light">Send Me the Plan!</Button>
+            <p class="my-3">
+              <small>
+                By downloading the plan, you are subscribing to receive emails and offers. You can 
+                unsubscribe at any time.
+              </small>
+            </p>
+            <a href="http://eepurl.com/ioJMfQ" title="Mailchimp - email marketing made easy and fun">
+              <img src="https://eep.io/mc-cdn-images/template_images/branding_logo_text_dark_dtp.svg">
+            </a>
           </Form>
         </CardBody>
       </Card>
