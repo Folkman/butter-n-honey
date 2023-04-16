@@ -55,7 +55,7 @@
         <ResponsiveImg alt="Four scripture mapping journals spread out" images={AboutImg} />
       </div>
       <div class="text-center pt-3">
-        <Button size="lg" color="primary" class="button" href={bnhUrl}>Shop Here</Button>
+        <Button size="lg" color="primary" class="button" href={bnhUrl}>Shop Butter n' Honey</Button>
       </div>
     </Col>
   </Row>
