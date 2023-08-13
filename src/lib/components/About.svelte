@@ -1,9 +1,8 @@
 <script lang="ts">
-  import { Container, Button, Row, Col } from 'sveltestrap'
+  import { Button, Row, Col } from 'sveltestrap'
   import AboutImg from '$lib/assets/about.jpg?w=1400;1200;1000;800;600;500&metadata'
   import ResponsiveImg from '$lib/components/ResponsiveImg.svelte'
-
-  const bnhUrl = 'https://shopbutternhoney.etsy.com'
+  import { SHOP_URL } from '$lib/helper'
 </script>
 
 <div id="about" class="about">
@@ -55,7 +54,7 @@
         <ResponsiveImg alt="Four scripture mapping journals spread out" images={AboutImg} />
       </div>
       <div class="text-center pt-3">
-        <Button size="lg" color="primary" class="button" href={bnhUrl}>Shop Butter n' Honey</Button>
+        <Button size="lg" color="primary" class="button" href={SHOP_URL}>Shop Butter n' Honey</Button>
       </div>
     </Col>
   </Row>
